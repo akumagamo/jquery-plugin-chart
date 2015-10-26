@@ -58,10 +58,10 @@ See ```demo.html``` for an working example.
 * label
 * hasBorder
 * item
-    ** sortOrder
-    ** value
-    ** color
-    ** description
+    * sortOrder
+    * value
+    * color
+    * description
 
 
 
