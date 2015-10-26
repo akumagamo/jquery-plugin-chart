@@ -31,7 +31,7 @@ add script to plugin
 	<script type="text/javascript" src="js/jquery.chart.js"></script>
 
 ### SourceControl Link & Information
-git@github.com:akumagamo/jquery-plugin-chart.git
+https://github.com/akumagamo/jquery-plugin-chart.git
 
 ### Base Code Example
 
