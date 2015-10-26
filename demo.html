@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Donut Graphs Demo</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.chart.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			if(!(/^\?noconvert/gi).test(location.search))
+				$(".donutgraph").dountGraph().css("border","solid 1px black");
+		});
+		
+	</script>
+</head>
+<body>
+	<table class="donutgraph">
+		<tr><th>sortOrder</th><th>value</th><th>color</th><th>description</th></tr>
+		<tr><td>5</td><td>10</td><td>red</td><td>eating</td></tr>
+		<tr><td>2</td><td>40</td><td>blue</td><td>drinking</td></tr>
+		<tr><td>3</td><td>50</td><td>green</td><td>sleeping</td></tr>
+		<tr><td>0</td><td>70</td><td>black</td><td>working</td></tr>
+		<tr><td>4</td><td>15</td><td>greenyellow</td><td>watching tv</td></tr>
+	</table>
+	
+	<table class="donutgraph">
+		<tr><th>sortOrder</th><th>value</th><th>color</th><th>description</th></tr>
+		<tr><td>1</td><td>10</td><td>yellowgreen</td><td>eating</td></tr>
+		<tr><td>15</td><td>40</td><td>gray</td><td>drinking</td></tr>
+		<tr><td>12</td><td>50</td><td>darkred</td><td>sleeping</td></tr>
+		<tr><td>3</td><td>70</td><td>black</td><td>working</td></tr>
+		<tr><td>14</td><td>15</td><td>darkblue</td><td>watching tv</td></tr>
+	</table>
+	
+	<table class="donutgraph">
+		<tr><th>sortOrder</th><th>value</th><th>color</th><th>description</th></tr>
+		<tr><td>1</td><td>10</td><td>red</td><td>drinking</td></tr>
+		<tr><td>2</td><td>40</td><td>blue</td><td>eating</td></tr>
+		<tr><td>1</td><td>50</td><td>green</td><td>working</td></tr>
+		<tr><td>3</td><td>70</td><td>black</td><td>watching tv</td></tr>
+		<tr><td>4</td><td>15</td><td>gray</td><td>sleeping</td></tr>
+	</table>
+	
+	<table class="donutgraph">
+		<tr><th>sortOrder</th><th>value</th><th>color</th><th>description</th></tr>
+		<tr><td>1</td><td>10</td><td>red</td><td>eating</td></tr>		
+	</table>
+
+</body>
+</html>
