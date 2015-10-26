@@ -35,7 +35,7 @@ git@github.com:akumagamo/jquery-plugin-chart.git
 
 ### Base Code Example
 
-	$(".donutchart").dountChart();
+	$(".donutchart").donutChart();
 	// Tested on Win7 with Chrome 46+
 
 See ```demo.html``` for an working example.
