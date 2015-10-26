@@ -50,7 +50,7 @@ See ```demo.html``` for an working example.
        +- readme.md (this document)
 	   +- LICENSE 
 	  
-### Options / Tables structure
+### Options / Table structure
 * width
 * height
 * legendSizePadding
