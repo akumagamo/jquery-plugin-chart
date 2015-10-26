@@ -1,16 +1,16 @@
 
 (function($){
-	$.fn.dountGraph = function(options) {
+	$.fn.chartGraph = function(options) {
 		
 		var graphs = [];
 		
 		this.each(function(idx, table){
-			graphs.push(createDonutGraph(table));
+			graphs.push(createChartGraph(table));
 		});
 		
 		return $(graphs);	
 			
-		function drawDonutGraph(context, graph, items){
+		function drawChartGraph(context, graph, items){
 
 			var sum = items.reduce(function(prev, cur){return prev + cur.value;}, 0);
 			var currentAngle = -1 * (Math.PI * 2 / 6);
@@ -99,10 +99,10 @@
 			return value < 0 ? 0 : value;
 		}
 		
-		function createDonutGraph(table){
+		function createChartGraph(table){
 			var items = [],
 				graph = {x:0, y:0},
-				opts = $.extend({}, $.fn.dountGraph.defaults, options),
+				opts = $.extend({}, $.fn.chartGraph.defaults, options),
 				legendSize = opts.legendSize || opts.height * opts.legendSizePadding,
 				maxTextLength = items.reduce(function(prev,curr){
 					return prev < curr.description.length ? curr.description.length : prev;
@@ -119,7 +119,7 @@
 				items.push({sortOrder:data[0]*1, value:data[1]*1, color:data[2], description:data[3]});
 			});
 			
-			graph.label = opts.label.replace(/{\d+}/, ++$.fn.dountGraph.counter);
+			graph.label = opts.label.replace(/{\d+}/, ++$.fn.chartGraph.counter);
 			
 			graph.hasBorder = opts.hasBorder;
 			
@@ -133,16 +133,16 @@
 			graph.height = graph.legendBox.isLeft ? opts.height : positiveOrZero(opts.height - graph.legendBox.height);
 			graph.legendSize = legendSize;	
 
-			drawDonutGraph(context, graph, items);
+			drawChartGraph(context, graph, items);
 
 			return $(canvas);
 		}
 		
 	};
 	
-	$.fn.dountGraph.counter = 0;
+	$.fn.chartGraph.counter = 0;
 	
-	$.fn.dountGraph.defaults = {
+	$.fn.chartGraph.defaults = {
 		width: 300,
 		height: 200,
 		legendSizePadding: 0.05,
