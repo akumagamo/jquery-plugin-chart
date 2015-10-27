@@ -26,7 +26,7 @@ jQuery Version 1.11.3
 ## Usage
 
 ### Setup
-add script to plugin
+add script to webpage
     
 	<script type="text/javascript" src="js/jquery.chart.js"></script>
 
