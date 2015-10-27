@@ -1,6 +1,7 @@
 # jQuery Chart plugin
-## Software Versionnumber 1.0.0 (2015-10-26) 
-### *Documentation last update 2015-10-27 12:30*
+## Software Versionnumber 1.0.0 (2015-10-26)
+(***Documentation last update 2015-10-27 12:30***)  
+
 Mini jQuery Chart plugin, that replaces HTML Tables with an DonutChart representation of the Data in the Table
 
 ![Alt Table to Chart Demo](https://raw.githubusercontent.com/akumagamo/jquery-plugin-chart/master/readme/table-to-chart.png "Table to Chart")  
