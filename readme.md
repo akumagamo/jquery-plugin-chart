@@ -1,6 +1,8 @@
 # jQuery Chart plugin
 ## Versionnumber 1.0.0 (2015-10-26) 
-Mini jQuery Chart plugin, that replaces Tables with html - canvas - DonutChart
+Mini jQuery Chart plugin, that replaces Tables with html - Canvas - DonutChart
+
+![Alt chart demo](/path/to/img.jpg "Chart Demo")  
 
 ## Features
 * Table-Rows can will be sorted
@@ -40,7 +42,7 @@ https://github.com/akumagamo/jquery-plugin-chart.git
 	$(".donutchart").donutChart();
 	// Tested on Win7 with Chrome 46+
 
-See ```demo.html``` for an working example.
+See ```demo.html``` for an working example, here a link to a working Demo [jQuery Chart plugin Demo](https://rawgit.com/akumagamo/jquery-plugin-chart/master/demo.html)
 
 ## Documentation
 
@@ -48,6 +50,8 @@ See ```demo.html``` for an working example.
      +-+- jquery-plugin-chart
 	   +-+- js
 	   | +- jquery.chart.js
+       +-+- readme (media for this document)
+       | +- chart.png
 	   +- demo.html
        +- readme.md (this document)
 	   +- LICENSE 
