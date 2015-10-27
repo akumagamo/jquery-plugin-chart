@@ -54,6 +54,7 @@ See ```demo.html``` for an working example, here a link to a working Demo [jQuer
 	   | +- jquery.chart.js
        +-+- readme (media for this document)
        | +- chart.png
+       | +- table-to-chart.png
 	   +- demo.html
        +- readme.md (this document)
 	   +- LICENSE 
