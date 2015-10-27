@@ -12,6 +12,7 @@ Mini jQuery Chart plugin, that replaces Tables with html - canvas - DonutChart
 
 ## Roadmap / Future Features
 * update Documentation
+* move **Know Bugs** section from this file to github issues
 * Chart-legend can be deactivated
 * flexible / configurable table-structure
 * refactor clean / code
@@ -19,6 +20,7 @@ Mini jQuery Chart plugin, that replaces Tables with html - canvas - DonutChart
 
 ## Known Bugs
 * Legend gets cut-off 
+* Labelbox is to small, when increasing the legendSize to much
 
 ## System Requirement & Prerequisits
 jQuery Version 1.11.3
