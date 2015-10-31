@@ -33,16 +33,19 @@ jQuery Version 1.11.3
 
 ### Setup
 add script to webpage
-    
-	<script type="text/javascript" src="js/jquery.chart.js"></script>
 
+```html 
+	<script type="text/javascript" src="js/jquery.chart.js"></script>
+```
 ### SourceControl Link & Information
 https://github.com/akumagamo/jquery-plugin-chart.git
 
 ### Base Code Example
 
+```javascript
 	$(".donutchart").donutChart();
 	// Tested on Win7 with Chrome 46+
+```
 
 See ```demo.html``` for an working example, here a link to a working Demo [jQuery Chart plugin Demo](https://rawgit.com/akumagamo/jquery-plugin-chart/master/demo.html)
 
