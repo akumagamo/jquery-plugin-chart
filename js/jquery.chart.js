@@ -35,9 +35,9 @@
 				drawGraphSegment(context, centerX, centerY, radius, currentAngle, currentAngle + newAngle, item.color || "#" + (idx +"d").repeat(3));
 
 				if(graph.legendBox.isLeft){
-					drawLegendEntry(context, item, centerX + (length/2), (centerY - (graph.legendSize * 1.25 * items.length)/2) + (graph.legendSize * idx * 1.25), graph.legendSize);
+					drawLegendEntry(context, item, centerX + (length/2), (centerY - (graph.legendSize * 1.25 * items.length)/2) + (graph.legendSize * idx * 1.25), graph.legendSize, sum);
 				}else{
-					drawLegendEntry(context, item, graph.x + graph.legendSize, graph.y + graph.height - graph.legendSize/2 + (graph.legendSize * 1.25 * idx), graph.legendSize);
+					drawLegendEntry(context, item, graph.x + graph.legendSize, graph.y + graph.height - graph.legendSize/2 + (graph.legendSize * 1.25 * idx), graph.legendSize, sum);
 				}
 
 				currentAngle += newAngle;
@@ -68,7 +68,7 @@
 			}
 		}
 		
-		function drawLegendEntry(context, entry, x, y, size){
+		function drawLegendEntry(context, entry, x, y, size, sum){
 			context.beginPath();
 			context.fillStyle = entry.color;
 			context.fillRect(x, y, size, size);
@@ -77,7 +77,7 @@
 			context.font = "bold " + size + "px Arial ";
 			context.textAlign = "left";
 			context.fillStyle = entry.color;
-			context.fillText(entry.description, x + (size * 1.5), y + size - 2 );
+			context.fillText(entry.description+" ("+parseInt(entry.value*100/sum)+"%)", x + (size * 1.5), y + size - 2 );
 		}
 	   
 		function drawGraphShadow(context, x, y, radius, color){
@@ -143,8 +143,8 @@
 	$.fn.donutChart.counter = 0;
 	
 	$.fn.donutChart.defaults = {
-		width: 300,
-		height: 200,
+		width: 600,
+		height: 400,
 		legendSizePadding: 0.05,
 		label: "Graph {0}", 
 		hasBorder: true
