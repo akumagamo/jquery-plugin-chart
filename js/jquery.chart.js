@@ -143,8 +143,8 @@
 	$.fn.donutChart.counter = 0;
 	
 	$.fn.donutChart.defaults = {
-		width: 600,
-		height: 400,
+		width: 300,
+		height: 200,
 		legendSizePadding: 0.05,
 		label: "Graph {0}", 
 		hasBorder: true
